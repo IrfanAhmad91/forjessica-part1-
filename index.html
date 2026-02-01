@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A romantic message with beautiful animations">
+    <title>Untuk Jessica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Audio element with autoplay and loop -->
+    <audio id="bgMusic" loop>
+        <source src="pajumpang.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Animated text container for 3-word segments -->
+        <div id="animatedText" class="animated-text"></div>
+        
+        <!-- Full text container (hidden initially) -->
+        <div id="fullText" class="full-text hidden">
+            <p>Mungkin pertemuan kita terlalu singkat, tapi entah kenapa semenjak bertemu denganmu, hari-hariku sedikit lebih berwarna dari biasanya.</p>
+            <p>Mungkin ini juga jawaban dari doa-doa yang telah dipanjatkan dan akhirnya bisa ketemu melalui Telegram (Leomatch).</p>
+            <p>Sengaja aku sampaikan lewat sini, karena kadang ada hal yang lebih nyaman diungkapkan lewat tulisan daripada sekadar ucapan.</p>
+        </div>
+
+        <!-- Button that appears after full text (hidden initially) -->
+        <button id="funnyButton" class="funny-button hidden">bersambung wkwkwk</button>
+    </div>
+
+    <!-- Fallback play button for browsers that block autoplay -->
+    <div id="playPrompt" class="play-prompt">
+        <button id="playButton" class="play-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span>Klik untuk memutar musik</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
